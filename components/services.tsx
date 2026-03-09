@@ -249,11 +249,11 @@ function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
 
   return (
     <>
-      {/* Backdrop - Click to close */}
+      {/* Backdrop */}
       <div 
-        className={`fixed inset-0 z-40 transition-all duration-300 ${
+        className={`fixed inset-0 z-50 transition-all duration-300 ${
           isOpen 
-            ? "opacity-100 backdrop-blur-md bg-background/80 cursor-pointer" 
+            ? "opacity-100 backdrop-blur-md bg-background/80" 
             : "opacity-0 pointer-events-none"
         }`}
         onClick={onClose}
